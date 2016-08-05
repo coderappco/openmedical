@@ -43,23 +43,23 @@
 											<i class="ti-settings"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Registros </span><i class="icon-arrow"></i>
+											<span class="title"> Laboratorio </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
 								<ul class="sub-menu">
+                                                                   <!--<li>
+                                                                            <a href="nueva-orden.html">
+                                                                                    <span class="title"> Nueva Orden </span>
+                                                                            </a>
+                                                                    </li>-->
 									<li>
-										<a href="nueva-orden.html">
+										<a href="neworden.jsp">
 											<span class="title"> Nueva Orden </span>
 										</a>
 									</li>
 									<li>
-										<a href="nueva-orden2.html">
-											<span class="title"> Nueva Orden 2 </span>
-										</a>
-									</li>
-									<li>
-										<a href="#.html">
+										<a href="newprueba.jsp">
 											<span class="title"> Pruebas </span>
 										</a>
 									</li>
@@ -318,7 +318,7 @@
 											<i class="ti-folder"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Otras Funciones </span><i class="icon-arrow"></i>
+											<span class="title"> Registros </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>

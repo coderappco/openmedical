@@ -9,3 +9,33 @@ box-shadow: 1px 11px 25px -2px rgba(0,0,0,0.75);
 	border: 1px solid gray;
 	border-radius: 5px;
 }
+.ti-neworden{
+    float:right;
+}
+.cont-nuorden{
+    padding: 3px;
+    background: #AEB6BF;
+    border: 1px #AEB6BF;
+    border-radius: 3px;
+    width: 30%;
+}
+.cont-nestudio{
+    background: #EAEDED  ;
+    padding: 3px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    
+}
+.cont-nestudio input[type="text"]{
+    width: 30%;
+    border: 1px solid gray;
+}
+.cont-nestudio i{
+    font-size: 30px;
+    color:#999;
+    cursor: pointer;
+}
+.cont-nestudio i:hover{
+    color:#34495E;
+    cursor: pointer;
+}
