@@ -1,12 +1,12 @@
 $(document).ready(function(){
     $('#1').click(AbiPrueba);
    $('#cargarInforme').click(function(){
-		$('#ven_sel_reporte').slideDown();
+		$('#ven_sel_reporte').fadeIn();
 		$('#ven_sel_reporte').draggable();
     });
     $('#cargarInforme2').click(function(){
-                $('#ven_sel_reporte').toggle();
-		$('#ven_sel_reporte2').slideDown();
+                $('#ven_sel_reporte').fadeOut();
+		$('#ven_sel_reporte2').fadeIn();
 		$('#ven_sel_reporte2').draggable();
     });
     $('#cerrarForm1').click(function(){
@@ -68,13 +68,14 @@ function AbiPrueba(f){
 }
 function buscarUsuario(){
     var ced = $('#criterio').val();
+   var rad = ($('input:radio[name=optradio]:checked').val());
     if (ced>0) {
         
-    if (ced=="123") {
+    if (ced=="123" && rad=="bus_ced") {
         $('#cont-resul-busqueda table').fadeIn();
         $("#botones-crud").fadeIn();
         $(".botones-crud").fadeIn();
-    }else{
+    }else if (ced!="123" && rad=="bus_ced"){
         $('#cont-resul-busqueda table').fadeOut();
         alert("El paciente no existe, debera agregar los nuevos datos...");
         
@@ -84,6 +85,7 @@ function buscarUsuario(){
         $('#home').addClass("in active")
         $( '#form-paciente' ).addClass( "active" );
         $(".botones-crud").fadeOut();
+        $("#botones-crud").fadeIn();
     }
     }else{
         alert("Ingrese un  numero");
@@ -91,8 +93,26 @@ function buscarUsuario(){
     }
 }
 function cargarInforme(){
-   $('#ven_sel_reporte').toggle();
+   $('#ven_sel_reporte').fadeIn();
     $('#ven_sel_reporte').draggable();
+}
+function cambBus(id){
+    
+    if (id!="bus_ced") {
+        $('#criterio').attr("placeholder","Numero de orden");
+        $('#form-paciente').css("display","none");
+        $( "#form-eps" ).addClass( "in active" );
+        $( "#profile" ).addClass( "in active" );
+        $('#home').removeClass("in active");
+        $('#criterio').val("");
+    }else{
+       $('#criterio').attr("placeholder","Numero de cedula");
+        $('#form-paciente').css("display","none");
+        $( "#form-eps" ).addClass( "in active" );
+        $( "#profile" ).addClass( "in active" );
+        $('#home').removeClass("in active");
+        $('#criterio').val(""); 
+    }
 }
 ///Presina enter
 //Esta línea llama a la funcion InicializarEventos

@@ -40,7 +40,7 @@
 								<a href="javascript:void(0)">
 									<div class="item-content">
 										<div class="item-media">
-											<i class="ti-settings"></i>
+											<i class="ti-support"></i>
 										</div>
 										<div class="item-inner">
 											<span class="title"> Laboratorio </span><i class="icon-arrow"></i>
@@ -55,7 +55,7 @@
                                                                     </li>-->
 									<li>
 										<a href="neworden.jsp">
-											<span class="title"> Nueva Orden </span>
+											<span class="title"> Orden </span>
 										</a>
 									</li>
 									<li>

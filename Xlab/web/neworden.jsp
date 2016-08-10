@@ -59,8 +59,8 @@
                            <!-- -->
                            <div class="row ">
                               <div class="cont-nuorden col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                  <label class="radio-inline">No de Cédula </label><input type="radio" checked="true" name="optradio">
-                                  <label class="radio-inline">No Orden</label><input type="radio" name="optradio">
+                                  <label class="radio-inline">No de Cédula </label><input type="radio"  checked="true" name="optradio" value="bus_ced" onclick="cambBus(this.value)">
+                                  <label class="radio-inline">No Orden</label><input type="radio"  name="optradio" value="bus_orden" onclick="cambBus(this.value)">
                                   <div class="form-group" id="form-buscar-pac">
                                       <input type="number" id="criterio" class="form-control" placeholder="Número de Cédula" min="1">
                                       <button class="btn search-button" type="submit" onclick="buscarUsuario()">
@@ -70,10 +70,11 @@
 							
                            </div>
                            <div class="cont-resul-busqueda col-lg-5 col-md-5 col-sm-5 col-xs-5" id="cont-resul-busqueda">
-                               <table class="">
+                               <table class="" border="">
                                    <tr>
                                        <td width="50%"><b>Nombres:</b> Darío Favier</td>
                                        <td><b>Apellidos:</b> Narvaez Calvache</td>
+                                       <td rowspan="3" width="20%"><img src="" />hoa</td>
                                    </tr>
                                    <tr>
                                        <td><b>Género:</b>MASCULINO</td>
@@ -84,7 +85,7 @@
                                        <td><b>Dirección: </b>Agualongo</td>
                                    </tr>
                                    <tr>
-                                       <td colspan="2">
+                                       <td colspan="3">
                                            <b>Observaciones</b><br>
                                            <textarea class="form-control">Aquí van las observaciones...</textarea>
                                        </td>

@@ -79,7 +79,14 @@
                                       <option>CUL: CULTIVOS</option>
                                       <option>BK: BASILOSCOPIAS</option>
                                       <option>COAG: COAGULACION</option>
-                                  </select>   
+                                  </select> 
+                               Buscar Paciente
+                               <div class="form-group" id="form-buscar-pac">
+                                      <input type="number" id="criterio" class="form-control" placeholder="Número de Cédula" min="1">
+                                      <button class="btn search-button" type="submit" onclick="buscarUsuario()">
+                                          <i class="ti-search"></i>
+                                      </button>
+                                  </div> 
                            </div>
                   </div>
                  
@@ -220,7 +227,7 @@
                                                                                                 <th>Unidades</th>
                                                                                                 <th>Conf</th>
                                                                                                 <th>Nota</th>
-                                                                                                <th colspan="2">Opciones</th>
+                                                                                                <th colspan="3">Opciones</th>
 												
 											</tr>
 										</thead>
@@ -244,6 +251,11 @@
                                                                                             </a>
                                                                                         </td>
                                                                                         <td>
+                                                                                            <a href="#">
+                                                                                            <i class='ti-stats-down' title="Graficar"></i>
+                                                                                            </a>
+                                                                                        </td>
+                                                                                        <td>
                                                                                             <a href="javascript:confirm('¿Esta seguro de eliminar el registro...?');">
                                                                                             <i class='ti-trash' id="eliF1" title="Eliminar"></i>
                                                                                             </a>
@@ -264,6 +276,11 @@
                                                                                         <td>
                                                                                             <a href="#">
                                                                                                 <i class='ti-pencil-alt' id="ediF2" title="Editar" onclick="AbiPrueba(2)"></i>
+                                                                                            </a>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <a href="#">
+                                                                                            <i class=' ti-stats-down' title="Graficar"></i>
                                                                                             </a>
                                                                                         </td>
                                                                                         <td>

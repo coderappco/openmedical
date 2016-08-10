@@ -24,7 +24,7 @@
             <li class="dropdown">
             <a href class="dropdown-toggle" data-toggle="dropdown">
                     <span class="dot-badge partition-red">                        
-                    </span> <i class="ti-comment"></i> <span>Opciones</span>
+                    </span> <i class="ti-email"></i> <span>Mail</span>
                 </a>
                 <!--<ul class="dropdown-menu dropdown-light dropdown-messages dropdown-large">
                 <li>
@@ -119,22 +119,22 @@
             <!-- start: LANGUAGE SWITCHER -->
             	<li class="dropdown">
             <a href class="dropdown-toggle" data-toggle="dropdown">
-            <i class="ti-printer"></i> Imprimir
+            <i class="ti-settings"></i> Herramientas
             </a>
             <ul role="menu" class="dropdown-menu dropdown-light fadeInUpShort">
             <li>
             <a href="#" class="menu-toggler">
-            Imprimir 1
+            He. 1
             </a>
             </li>
             <li>
             <a href="#" class="menu-toggler">
-            Imprimir 2
+              He. 2
             </a>
             </li>
             <li>
             <a href="#" class="menu-toggler">
-           Imprimir 3
+             He. 3
             </a>
             </li>
             </ul>
