@@ -1,7 +1,7 @@
 <header class="navbar navbar-default navbar-static-top">
     <!-- start: NAVBAR HEADER -->
     <div class="navbar-header">
-        <a href="#" class="sidebar-mobile-toggler pull-left hidden-md hidden-lg" class="btn btn-navbar sidebar-toggle" data-toggle-class="app-slide-off" data-toggle-target="#app" data-toggle-click-outside="#sidebar">
+        <a href="#" class="sidebar-mobile-toggler pull-left hidden-md hidden-lg btn btn-navbar sidebar-toggle" data-toggle-class="app-slide-off" data-toggle-target="#app" data-toggle-click-outside="#sidebar">
             <i class="ti-align-justify"></i>
         </a>
         <a class="navbar-brand" href="index.html">
@@ -22,8 +22,9 @@
             <!-- start: MESSAGES DROPDOWN -->
              
             <li class="dropdown">
-                <a href class="dropdown-toggle" data-toggle="dropdown">
-                    <span class="dot-badge partition-red"></span> <i class="ti-comment"></i> <span>Opciones</span>
+            <a href class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="dot-badge partition-red">                        
+                    </span> <i class="ti-comment"></i> <span>Opciones</span>
                 </a>
                 <!--<ul class="dropdown-menu dropdown-light dropdown-messages dropdown-large">
                 <li>
@@ -87,8 +88,8 @@
             <!-- end: MESSAGES DROPDOWN -->
             <!-- start: ACTIVITIES DROPDOWN -->
             <li class="dropdown">
-                <a href class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="ti-check-box"></i> <span>Actividades</span>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"  id="cargarInforme">
+                    <i class="ti-printer"></i> <span>Informes</span>
                 </a>
                 <!--<ul class="dropdown-menu dropdown-light dropdown-messages dropdown-large">
                 <li>
@@ -156,7 +157,7 @@
                         </a>
                     </li>
                     <li>
-                        <a hef="pages_messages.html">
+                        <a href="pages_messages.html">
                             My Messages (3)
                         </a>
                     </li>

@@ -11,29 +11,30 @@
         <!-- start: META -->
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta content="" name="description" />
-        <meta content="" name="author" />
-        <!-- end: META -->
-        <!-- start: GOOGLE FONTS -->
-        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-        <!-- end: GOOGLE FONTS -->
-        <!-- start: MAIN CSS -->
-        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendor/themify-icons/themify-icons.min.css">
-        <link href="vendor/animate.css/animate.min.css" rel="stylesheet" media="screen">
-        <link href="vendor/perfect-scrollbar/perfect-scrollbar.min.css" rel="stylesheet" media="screen">
-        <link href="vendor/switchery/switchery.min.css" rel="stylesheet" media="screen">
-        <!-- end: MAIN CSS -->
-        <!-- start: CLIP-TWO CSS -->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/plugins.css">
-        <link rel="stylesheet" href="assets/css/estilos.css">   
-        <link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
-        <!-- end: CLIP-TWO CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="" name="description" />
+		<meta content="" name="author" />
+		<!-- end: META -->
+		<!-- start: GOOGLE FONTS -->
+		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+		<!-- end: GOOGLE FONTS -->
+		<!-- start: MAIN CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="vendor/themify-icons/themify-icons.min.css">
+		<link href="vendor/animate.css/animate.min.css" rel="stylesheet" media="screen">
+                <link href="vendor/jquery-ui/jquery-ui-1.10.1.custom.min.css" rel="stylesheet">
+		<link href="vendor/perfect-scrollbar/perfect-scrollbar.min.css" rel="stylesheet" media="screen">
+		<link href="vendor/switchery/switchery.min.css" rel="stylesheet" media="screen">
+		<!-- end: MAIN CSS -->
+		<!-- start: CLIP-TWO CSS -->
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets/css/plugins.css">
+		<link rel="stylesheet" href="assets/css/estilos.css">		
+		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+                 <!-- end: CLIP-TWO CSS -->
         <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
         <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
     </head>
@@ -52,27 +53,86 @@
                     <div class="form-norden">
                         
  <div class="row">
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <div class="ti-neworden"> <h4>Nueva Orden</h4> 
-                                        <input type="submit" value="Registrar" class="btn btn-success">
-                                        </div>
-                          
-                              <div class="cont-nuorden">No Orden
-                                  <input type="text" class="form-control" placeholder="Número de orden">
+                <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                    <div class="panel panel-default color">
+                        <div class="panel-heading cab-orden">
+                           <!-- -->
+                           <div class="row ">
+                              <div class="cont-nuorden col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                  <label class="radio-inline">No de Cédula </label><input type="radio" checked="true" name="optradio">
+                                  <label class="radio-inline">No Orden</label><input type="radio" name="optradio">
+                                  <div class="form-group" id="form-buscar-pac">
+                                      <input type="number" id="criterio" class="form-control" placeholder="Número de Cédula" min="1">
+                                      <button class="btn search-button" type="submit" onclick="buscarUsuario()">
+                                          <i class="ti-search"></i>
+                                      </button>
+                                  </div>
+							
                            </div>
+                           <div class="cont-resul-busqueda col-lg-5 col-md-5 col-sm-5 col-xs-5" id="cont-resul-busqueda">
+                               <table class="">
+                                   <tr>
+                                       <td width="50%"><b>Nombres:</b> Darío Favier</td>
+                                       <td><b>Apellidos:</b> Narvaez Calvache</td>
+                                   </tr>
+                                   <tr>
+                                       <td><b>Género:</b>MASCULINO</td>
+                                       <td><b>Edad </b>30 a</td>
+                                   </tr>
+                                   <tr>
+                                       <td><b>Teléfono:</b> 3106038006</td>
+                                       <td><b>Dirección: </b>Agualongo</td>
+                                   </tr>
+                                   <tr>
+                                       <td colspan="2">
+                                           <b>Observaciones</b><br>
+                                           <textarea class="form-control">Aquí van las observaciones...</textarea>
+                                       </td>
+                                   </tr>
+                               </table>
+                                   
+                               <!-- <ul  style="display:none ">
+                                    <li><b>Nombres:</b> Darío Favier</li>
+                                    <li><b>Apellidos:</b> Narvaez Calvache</li>
+                                     <li><b>Género:</b>MASCULINO</li>
+                                     <li><b>Dirección: </b>Agualongo</li>
+                                     <li><b>Edad:</b> 30 a</li> 
+                                     <li><b>Teléfono:</b> 3106038006</li>
+                                     <li style="display: block"><b>Observaciones</b> <textarea class="form-control"></textarea></li>
+                                </ul>-->
+                            </div>
+                           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="botones-crud"> 
+                                        <input type="submit" value="Registrar" class="btn btn-success">
+                                         
+                                        <button class="btn search-button botones-crud" type="submit">
+                                          <i class=" ti-pencil-alt"></i>
+                                      </button>
+                                         <button class="btn search-button botones-crud" type="submit">
+                                          <i class=" ti-trash"></i>
+                                      </button>
+                           </div> 
+                           </div>                               
                         </div>
                         <!-- /.panel-heading -->
-                        <div class="panel-body panel-form-new-usu">
+                        <div class="panel-body ">
                             <!-- Nav tabs -->
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#home" data-toggle="tab"><i class="ti-user"></i> <span> Datos-Paciente</span></a>
+                            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 panel-form"> 
+                                <ul class="nav nav-tabs">
+                            <li style="display: none" id="form-paciente">
+                                    <a href="#home" data-toggle="tab">
+                                        <i class="ti-user"></i> <span> Datos-Paciente</span>
+                                    </a>
                                 </li>
-                                <li><a href="#profile" data-toggle="tab"><i class="ti-layout-cta-right"></i> <span> Datos Clínica</span></a>
+                                <li class="active" id="form-eps">
+                                    <a href="#profile" data-toggle="tab">
+                                        <i class="ti-layout-cta-right"></i> <span> Datos EPS</span>
+                                    </a>
                                 </li>
                                 
-                                <li><a href="#messages" data-toggle="tab"><i class="ti-folder"></i> <span> Estudios </span></a>
+                                <li>
+                                    <a href="#messages" data-toggle="tab">
+                                        <i class="ti-folder"></i> <span> Estudios </span>
+                                    </a>
                                 </li>
                               <!--  <li><a href="#settings" data-toggle="tab">Settings</a>
                                 </li>-->
@@ -82,11 +142,11 @@
                             <form action="cargarvista" method="post">     
                            
                                 <div class="tab-content">
-                                <div class="tab-pane fade in active" id="home">
+                                <div class="tab-pane fade" id="home">
                                     <table class="table">
                                         
                                          <tr>
-                <td>Documento de indentidad:<br> 
+                
                  <label class="col-lg-2"> Tipo</label>   
             <div class="col-lg-4">
                
@@ -107,7 +167,7 @@
      <tr><td>
                     <label  class="col-lg-2">Fecha nacimiento:</label> 
             <div class="col-lg-4">                
-                <input type="date" class="form-control">
+                <input type="date" id="datepicker" class="form-control">
             </div>
               <label  class="col-lg-2"> Género:</label> 
                  <div class="col-lg-4">
@@ -115,7 +175,7 @@
                         <select class="form-control"  id="selec" onchange="mostrar_fil(this.value)">
                              <option value="m"> MASCULINO </option>
                              <option value="f"> FEMENINO </option>
-                             <option value="i"> AMBOS </option>                                     
+                             <option value="i"> INDEFINIDO </option>                                     
                          </select>
                         </div>
                 </td>
@@ -127,7 +187,7 @@
                        <label>Normal</label> <input type="radio" name="estadoUser" value="0" checked>
                         <label>Embarazo</label> <input type="radio" name="estadoUser" value="1">
                     </div>
-                    <label class="col-lg-3">Meses de GestaciÃ³n</label>
+                    <label class="col-lg-3">Meses de Gestación</label>
                     <div class="col-lg-2">
                         <input type="number" min="1" class="form-control" value="1">
                     </div>
@@ -189,7 +249,7 @@
             </tr>       
                                     </table>
                                 </div>
-                                <div class="tab-pane fade" id="profile">
+                                <div class="tab-pane fade in active" id="profile">
                                     <table class="table">
                                         <tr>
                 <td>  
@@ -203,9 +263,9 @@
                                </script>
                                </select>
                         </div>
-                        <label class="col-lg-2">No Orden EPS:</label> 
+                        <label class="col-lg-2">No Orden:</label> 
                         <div class="col-lg-4">
-                            <input required type="text" class="form-control" placeholder="NÃºmero de Orden EPS">
+                            <input required type="text" class="form-control" placeholder="Número de Orden EPS">
                         </div>
                 </td>
             </tr>
@@ -268,6 +328,14 @@
             </div>
               </td>
             </tr>
+            <tr>
+                <td>
+                    <label class="col-lg-3">Nota Orden:</label> 
+                        <div class="col-lg-10">
+                            <textarea required class="form-control input-sm"> </textarea>
+                    </div>
+                </td>
+            </tr> 
                                     </table>
                                 </div>
                              
@@ -317,6 +385,7 @@
                             </form>
                         </div>
                         <!-- /.panel-body -->
+                        </div> 
                     </div>
                     <!-- /.panel -->
 
@@ -1224,6 +1293,8 @@
             <!-- end: FOOTER -->
             <!-- start: OFF-SIDEBAR -->
             <%@ include file="modal.jsp" %>
+            <%@ include file="formbusinfo.jsp" %>
+            <%@ include file="formbusarea.jsp" %>
             <!-- end: OFF-SIDEBAR -->
             <!-- start: SETTINGS -->
         <!--    <div class="settings panel panel-default hidden-xs hidden-sm" id="settings">
@@ -1339,28 +1410,31 @@
             <!-- end: SETTINGS -->
         </div>
         <!-- start: MAIN JAVASCRIPTS -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script src="vendor/modernizr/modernizr.js"></script>
-        <script src="vendor/jquery-cookie/jquery.cookie.js"></script>
-        <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-        <script src="vendor/switchery/switchery.min.js"></script>
-        <!-- end: MAIN JAVASCRIPTS -->
-        <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
-        <script src="vendor/Chart.js/Chart.min.js"></script>
-        <script src="vendor/jquery.sparkline/jquery.sparkline.min.js"></script>
-        <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
-        <!-- start: CLIP-TWO JAVASCRIPTS -->
-        <script src="assets/js/main.js"></script>
-        <!-- start: JavaScript Event Handlers for this page -->
-        <script src="assets/js/index.js"></script>
-        <script src="assets/js/java.js"></script>
-        <script>
-            jQuery(document).ready(function() {
-                Main.init();
-                Index.init();
-            });
-        </script>
+        <!-- start: MAIN JAVASCRIPTS -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="vendor/modernizr/modernizr.js"></script>
+		<script src="vendor/jquery-cookie/jquery.cookie.js"></script>
+		<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+		<script src="vendor/switchery/switchery.min.js"></script>
+                <script src="vendor/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
+		<!-- end: MAIN JAVASCRIPTS -->
+		<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<script src="vendor/Chart.js/Chart.min.js"></script>
+		<script src="vendor/jquery.sparkline/jquery.sparkline.min.js"></script>
+                
+		<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<!-- start: CLIP-TWO JAVASCRIPTS -->
+		<script src="assets/js/main.js"></script>
+                <script src="assets/js/java.js"></script>
+		<!-- start: JavaScript Event Handlers for this page -->
+		<script src="assets/js/index.js"></script>
+		<script>
+			jQuery(document).ready(function() {
+				Main.init();
+				Index.init();
+			});
+		</script>
         <!-- end: JavaScript Event Handlers for this page -->
         <!-- end: CLIP-TWO JAVASCRIPTS -->
     </body>

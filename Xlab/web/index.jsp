@@ -25,6 +25,7 @@
 		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="vendor/themify-icons/themify-icons.min.css">
 		<link href="vendor/animate.css/animate.min.css" rel="stylesheet" media="screen">
+                <link href="vendor/jquery-ui/jquery-ui-1.10.1.custom.min.css" rel="stylesheet">
 		<link href="vendor/perfect-scrollbar/perfect-scrollbar.min.css" rel="stylesheet" media="screen">
 		<link href="vendor/switchery/switchery.min.css" rel="stylesheet" media="screen">
 		<!-- end: MAIN CSS -->
@@ -33,6 +34,7 @@
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/estilos.css">		
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+                
 		<!-- end: CLIP-TWO CSS -->
 		<!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
 		<!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
@@ -69,7 +71,8 @@
 			</footer>
 		
 		</div>
-		
+		<%@ include file="formbusinfo.jsp" %>
+                 <%@ include file="formbusarea.jsp" %>
 		<!-- start: MAIN JAVASCRIPTS -->
 		<script src="vendor/jquery/jquery.min.js"></script>
 		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -77,13 +80,16 @@
 		<script src="vendor/jquery-cookie/jquery.cookie.js"></script>
 		<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 		<script src="vendor/switchery/switchery.min.js"></script>
+                <script src="vendor/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
 		<!-- end: MAIN JAVASCRIPTS -->
 		<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 		<script src="vendor/Chart.js/Chart.min.js"></script>
 		<script src="vendor/jquery.sparkline/jquery.sparkline.min.js"></script>
+                
 		<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 		<!-- start: CLIP-TWO JAVASCRIPTS -->
 		<script src="assets/js/main.js"></script>
+                <script src="assets/js/java.js"></script>
 		<!-- start: JavaScript Event Handlers for this page -->
 		<script src="assets/js/index.js"></script>
 		<script>

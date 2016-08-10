@@ -53,23 +53,50 @@
                         
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default color">
             <div class="panel-heading">
-                <div class="ti-neworden">
-                    <h4>Nueva Prueba<h4>
-                            
-                </div>
-               <!-- <div class="cont-nuorden">Cod. CUPS
-                    <input type="text" class="form-control" placeholder="Código CUPS">
-                </div>-->
+                  <div class="row">
+                      <div class=" cont-bus-res col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                          <label>Resultado</label><label>Mg/dl</label>
+                          <input type="text" class="form-control">
+                          <label>Referencia:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label>70</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label>110</label><br>
+                          <label>Notas Resultado</label><br>
+                          <textarea class="form-control"></textarea>
+                          
+                      </div>
+                      <div class="cont-tex-pm col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                          <label>Notas Resultado</label><br>
+                          <textarea class="form-control" rows="5"></textarea>
+                          
+                      </div>
+                           <div class="cont-bus-res col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                               Ver Pruebas por área
+                                  <select class="form-control ">
+                                      <option>Todas las areas</option>
+                                      <option>QUIMICA SANGUINEA</option>
+                                      <option>CUL: CULTIVOS</option>
+                                      <option>BK: BASILOSCOPIAS</option>
+                                      <option>COAG: COAGULACION</option>
+                                  </select>   
+                           </div>
+                  </div>
+                 
             </div>
             <!-- /.panel-heading -->
-            <div class="panel-body panel-form-new-usu">
+            <div class="panel-body panel-form">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs">
-                                <li class="active"><a href="#home" data-toggle="tab"><i class="ti-agenda"></i> <span> Datos-Prueba</span></a>
+                             <li>
+                                            <a href="#home" data-toggle="tab">
+                                                <i class="ti-agenda">     
+                                                </i> <span> Datos-Prueba</span>
+                                            </a>
                                 </li>
-                              <li><a href="#messages" data-toggle="tab"><i class="ti-eye"></i> <span>Ver Pruebas</span></a>
+                              <li class="active"><a href="#messages" data-toggle="tab">
+                                      <i class="ti-eye"></i> <span>Ver Pruebas</span>
+                                  </a>
                                 </li>
                                 
                                <!--    <li><a href="#messages" data-toggle="tab"><i class="ti-folder"></i> <span> Estudios </span></a>
@@ -82,7 +109,7 @@
                             <form action="cargarvista" method="post">     
                            
                                 <div class="tab-content">
-                                <div class="tab-pane fade in active" id="home">
+                                <div class="tab-pane fade" id="home">
                                  <table class="table">
                                 <tr>
                                     <td>Código CUPS<br> 
@@ -179,34 +206,74 @@
                                     
                                 </div>-->
                              
-                                <div class="tab-pane fade" id="messages">
+                                <div class="tab-pane  fade in active" id="messages">
                                    
                                     <table class="table table-striped table-bordered table-hover table-full-width" id="sample_1">
 										<thead>
 											<tr>
-												<th>Código</th>
-												<th>Nombre</th>
-                                                                                                <th>Form. Resultado</th>
-												<th>Unidades</th>
+												<th>Estado</th>
+												<th width="30%">Nombre</th>
+                                                                                                <th>Cod-Prueba</th>
+												<th>Min: Referencia</th>
+                                                                                                <th>Max: Referencia</th>
+                                                                                                <th>Resultado</th>
+                                                                                                <th>Unidades</th>
+                                                                                                <th>Conf</th>
+                                                                                                <th>Nota</th>
                                                                                                 <th colspan="2">Opciones</th>
 												
 											</tr>
 										</thead>
 										<tbody>
-                                                                                <script>
-                                                                                    for (f=0;f<=2;f++){
-                                                                                       document.write("<tr>");
-                                                                                      
-                                                                                           document.write("<td>Ejemplo</td>");
-                                                                                           document.write("<td>Ejemplo</td>");
-                                                                                           document.write("<td>Ejemplo</td>");
-                                                                                           document.write("<td>Ejemplo</td>");
-                                                                                           document.write("<td><i class='ti-pencil-alt'></i></td>");
-                                                                                           document.write("<td><i class='ti-trash'></i></td>");
-                                                                                      
-                                                                                       document.write("</tr>");
-                                                                                    }
-                                                                                </script>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                           <i class='ti-harddrives'></i> 
+                                                                                        </td>
+                                                                                        <td>Hematrocito</td>
+                                                                                        <td>HCT</td>
+                                                                                        <td>37</td>
+                                                                                        <td>54</td>
+                                                                                        <td><input type='text' class='form-control' id="pru_1" value='125' disabled="true"/></td>
+                                                                                        <td>%</td>
+                                                                                        <td><input type="checkbox" value=""></td>
+                                                                                        <td>nota</td>  
+                                                                                
+                                                                                    <td>
+                                                                                            <a href="#">
+                                                                                                <i class='ti-pencil-alt' id="ediF1" title="Editar" onclick="AbiPrueba(1)"></i>
+                                                                                            </a>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <a href="javascript:confirm('¿Esta seguro de eliminar el registro...?');">
+                                                                                            <i class='ti-trash' id="eliF1" title="Eliminar"></i>
+                                                                                            </a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                       <tr>
+                                                                                        <td>
+                                                                                           <i class='ti-harddrives'></i> 
+                                                                                        </td>
+                                                                                       <td>Hematrocito</td>
+                                                                                        <td>HCT</td>
+                                                                                        <td>37</td>
+                                                                                        <td>54</td>
+                                                                                        <td><input type='text' class='form-control' id="pru_2" disabled="true"/></td>
+                                                                                        <td>%</td>
+                                                                                        <td><input type="checkbox" value=""></td>
+                                                                                        <td>nota</td>
+                                                                                        <td>
+                                                                                            <a href="#">
+                                                                                                <i class='ti-pencil-alt' id="ediF2" title="Editar" onclick="AbiPrueba(2)"></i>
+                                                                                            </a>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <a href="">
+                                                                                            <i class='ti-trash' id="eliF2" title="Eliminar"></i>
+                                                                                            </a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                  
+                                                                               
                                                                                 </tbody>
 									</table>
                        
@@ -1265,6 +1332,7 @@
             jQuery(document).ready(function() {
                 Main.init();
                 Index.init();
+               
             });
         </script>
         <!-- end: JavaScript Event Handlers for this page -->
